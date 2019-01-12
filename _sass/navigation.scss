@@ -7,13 +7,15 @@ nav {
 	z-index: 999;
 
 	a {
+		font-family: "Quattrocento Sans", sans-serif;
+		font-weight: 700;
 		display: inline-block;
 		text-decoration: none;
 		padding: 20px 15px;
 		color: #444;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		font-size: .9em;
+		font-size: 1.1em;
 
 		&.active {
 			color: #888;

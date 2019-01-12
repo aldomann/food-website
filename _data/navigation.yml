@@ -1,8 +1,6 @@
 - name: Home
   link: /
 - name: About
-  link: /about/
+  link: https://aldomann.com
 - name: Recipes
   link: /recipes/
-- name: Contact
-  link: /contact/
