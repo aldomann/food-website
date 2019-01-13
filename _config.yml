@@ -9,7 +9,7 @@ newsletter_action:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
+logo: assets/images/siteicon.png
 description: Food blog template for Jekyll.
 author:
   name:
@@ -69,6 +69,9 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+
+sass:
+  sass_dir: ./assets/_sass
 
 # -----------
 # CloudCannon
