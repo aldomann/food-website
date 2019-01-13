@@ -20,6 +20,8 @@ h1 {
 }
 
 h2 {
+	font-family: "Quattrocento Sans", sans-serif;
+	font-weight: 700;
 	font-size: 1.4em;
 }
 
@@ -34,6 +36,9 @@ header {
 
 img {
 	max-width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 ol li + li {

@@ -11,7 +11,9 @@
 		</header>
 		<div class="container main-content">
 			<section class="content">{{ content }}</section>
-			{% include sidebar.html %}
+			{% unless layout.sidebar == false %}
+				{% include sidebar.html %}
+			{% endunless %}
 		</div>
 		<footer>
 			<div class="container">
