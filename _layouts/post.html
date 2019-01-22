@@ -33,10 +33,7 @@ sidebar: false
 
 	<div class="sharing">
 		{% assign share_url = page.url | absolute_url | cgi_escape %}
-		<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include social-icon.html icon="Facebook" %}</a>
-		<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I'm%20going%20to%20this%20event!">{% include social-icon.html icon="Twitter" %}</a>
-		<a class="google-plus" href="https://plus.google.com/share?url={{ share_url }}">{% include social-icon.html icon="Google Plus" %}</a>
-		<a class="pinterest" href="//pinterest.com/pin/create/link/?url={{ share_url }}&amp;description={{ page.description }}">{% include social-icon.html icon="Pinterest" %}</a>
+		<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I've%20found%20a%20great%20recipe.%20Check%20it%20out!">{% include social-icon.html icon="Twitter" %}</a>
 		<a class="email" href="mailto:?subject=I've%20found%20a%20great%20recipe&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
 	</div>
 
@@ -64,18 +61,3 @@ sidebar: false
 	{% endif %}
 </article>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.imgPin.min.js"></script>
-<script>
-	$(function() {
-		$('.post img').imgPin();
-
-		$('a[href*=\\#]').on('click', function(event){
-			var el = $(this.hash);
-			if (el.length > 0) {
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
-			}
-		});
-	});
-</script>
