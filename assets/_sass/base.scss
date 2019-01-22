@@ -1,3 +1,10 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,300,800,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i');
+
+// Base
+
 html , body {
 	padding: 0;
 	margin: 0;
@@ -5,13 +12,13 @@ html , body {
 }
 
 body, input, textarea {
-	font-family: "Noto Sans", sans-serif;
+	@include sans;
 	color: #222;
 	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
-	font-family: "Quattrocento Sans", sans-serif;
+	@include title-sans;
 	font-weight: 700;
 	font-size: 1.8em;
 	margin: 0;
@@ -20,7 +27,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Quattrocento Sans", sans-serif;
+	@include title-sans;
 	font-weight: 700;
 	font-size: 1.4em;
 }
