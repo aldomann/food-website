@@ -1,6 +1,9 @@
 ---
 ---
 
+// Fonts
+@import "fonts";
+
 @import "_variables";
 @import "_mixins";
 
@@ -12,3 +15,6 @@
 @import "sidebar";
 @import "recipes";
 @import "cloudcannon";
+
+// Footer
+@import "footer";
