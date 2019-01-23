@@ -9,16 +9,12 @@ newsletter_action:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: assets/images/siteicon.png
-description: Food blog template for Jekyll.
+logo: assets/images/logo.svg
+description: À la Alf
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Treat Template
-  links:
-    - https://github.com/CloudCannon/treat-jekyll-template
+  name: Alfredo Hernández
+  email: aldomann.designs@gmail.com
+  twitter: aldomann
 
 # -----
 # Build
