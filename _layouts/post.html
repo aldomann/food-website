@@ -31,10 +31,15 @@ sidebar: false
 		</div>
 	</div>
 
-	<div class="sharing">
+	<div id="share">
 		{% assign share_url = page.url | absolute_url | cgi_escape %}
-		<a class="twitter" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I've%20found%20a%20great%20recipe.%20Check%20it%20out!">{% include social-icon.html icon="Twitter" %}</a>
-		<a class="email" href="mailto:?subject=I've%20found%20a%20great%20recipe&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
+		{% for item in site.data.sharing.social %}
+			{% unless item.type == "fas" %}
+				<a class="{{ item.icon }}" href="{{ item.base_link }}{{ item.url_link }}{{ share_url }}{{ item.text_link }}{{ page.title }}{{ item.src_link }}" target="_blank"><i class="fab fa-{{ item.icon }}" ></i></a>
+			{% else %}
+				<a class="{{ item.icon }}" href="{{ item.link }}" target="_blank"><i class="fas fa-{{ item.icon }}" ></i></a>
+			{% endunless %}
+		{% endfor %}
 	</div>
 
 	<div class="cta">
